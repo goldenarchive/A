@@ -58,7 +58,7 @@ static const unsigned int MAX_ORPHAN_TRANSACTIONS = MAX_BLOCK_SIZE/100;
 /** Default for -maxorphanblocks, maximum number of orphan blocks kept in memory */
 static const unsigned int DEFAULT_MAX_ORPHAN_BLOCKS = 750;
 /** This is the static minimum fee associated with each transaction in Satoshis (1 Coin = 100,000,000 Satoshis) */
-static const int64_t MIN_TX_FEE = 295000000;
+static const int64_t MIN_TX_FEE = 100000000; /**currently Always 1.00 Coin/kB, fee being 100,000,000 sats
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 /** No amount larger than this (in satoshi) is valid */
