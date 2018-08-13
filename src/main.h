@@ -72,7 +72,7 @@ inline int64_t FutureDrift(int64_t nTime) { return nTime + DRIFT; }
 
 /** "reject" message codes **/
 static const unsigned char REJECT_INVALID = 0x10;
-//adjustable Masternode collateral call, currently 5000 A = $5,000 USD* subject to change+/- higher collateral/lower collateral
+//adjustable Masternode collateral call, currently 1,000,000 A = $1,000,000 USD* subject to change+/- higher collateral/lower collateral
 inline int64_t GetMNCollateral(int nHeight) { return 1000000; }
 
 extern CScript COINBASE_FLAGS;
